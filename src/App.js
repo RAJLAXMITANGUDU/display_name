@@ -6,10 +6,10 @@ import React,{useState} from 'react';
   const [error,setError] =useState(false);
   const handleSubmit=(e)=>{
     e.preventDefault();
-    if(!firstName || !lastName){
-      setError(true);
+    if(!firstName.trim() || !lastName.trim()){
+      setError(true)
     } else {
-      setFullName(`${firstName} ${lastName}`);
+      setFullName(`${firstName.trim()} ${lastName.trim()}`);
       setError(false);
     }
   };
@@ -29,7 +29,7 @@ import React,{useState} from 'react';
    />
    </label>
    <label>
-   Lastt Name:
+   Last Name:
    <input
    type ="text"
    value={lastName}
