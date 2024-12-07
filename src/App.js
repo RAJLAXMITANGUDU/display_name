@@ -48,8 +48,7 @@ import React,{useState} from 'react';
   </form>
   {fullName && (
     <div style={{marginTop:'20px'}}>
-      <h2>Full Name:</h2>
-      <p>{fullName}</p>
+      <h2>Full Name:{fullName}</h2>
     </div>
   )}
   </>
